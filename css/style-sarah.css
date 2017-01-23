@@ -1,0 +1,78 @@
+@font-face {
+	font-family: gothamLight;
+	src: url(fonts/dfthacks/Gotham-Light.otf);
+}
+
+@font-face {
+	font-family: gothamNarrowLight;
+	src: url(fonts/dfthacks/Gotham-Narrow-Light.otf);
+}
+
+@font-face {
+	font-family: gothamThin;
+	src: url(fonts/dfthacks/Gotham-Thin.otf);
+}
+
+@font-face {
+	font-family: gothamLight-Regular;
+	src: url(fonts/dfthacks/GothamLight-Regular.otf);
+}
+
+@font-face {
+	font-family: gothamBold;
+	src: url(fonts/dfthacks/Gotham-Black.otf);
+}
+
+body { 
+	background-image: url(../img-sarah/background-dft.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:cover;
+}
+
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	position:fixed;
+}
+
+li {
+	display:inline;
+	font-family: GothamLight;
+	font-size: 25px;
+}
+
+li a{
+	font-color: #FF0000;
+	text-decoration: none;
+	text-align:center;
+}
+
+.wrapper{
+	height:200px;
+}
+
+.fit{
+	max-width:100%;
+	max-height:100%;
+	align-content: center;
+}
+
+.polygon{
+	margin-left:-30px;
+}
+
+h2{
+	font-family:GothamLight;
+	font-size:25px;
+	!important font-color: #0BE1A2;
+}
+
+p{
+	font-family:GothamLight;
+	font-size:25px;
+	!important font-color: #ffffff;
+}
