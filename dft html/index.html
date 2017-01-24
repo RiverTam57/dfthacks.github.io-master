@@ -7,6 +7,7 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 	<link rel="stylesheet" type="text/css" href="../css/style-sarah.css">
+	<link href="../css/scrolling-nav.css" rel="stylesheet">
 
 </head>
 
@@ -19,13 +20,13 @@
 				<img src="../img-sarah/dft-logo.png">
 				<nav>
 					<ul>
-						<li><a href="#">    ABOUT     </a></li>
-						<li><a href="#">    APPLY     </a></li>
-						<li><a href="#">     FAQ     </a></li>
-						<li><a href="#">   SPONSORS     </a></li>
-						<li><a href="#">   PARTNERS     </a></li>
-						<li><a href="#">    PRESS     </a></li>
-						<li><a href="#">    CONTACT     </a></li>
+						<li><a class="page-scroll" href="#about">    ABOUT     </a></li>
+						<li><a class="page-scroll" href="#apply">    APPLY     </a></li>
+						<li><a class="page-scroll" href="#faq">     FAQ     </a></li>
+						<li><a class="page-scroll" href="#Sponsors">   SPONSORS     </a></li>
+						<li><a class="page-scroll" href="#Partners">   PARTNERS     </a></li>
+						<li><a class="page-scroll" href="#press">    PRESS     </a></li>
+						<li><a class="page-scroll" href="#contact">    CONTACT     </a></li>
 					</ul>	
 				</nav>
 			</div>
@@ -46,7 +47,7 @@
 	<!-- About 
   	================================================== -->
 
-	<div id="About">
+	<div id="about">
 		<div class="wrapper">
 			<img class="polygon" src="../img-sarah/polygon-about.png">
 				<h2>DFTHACKS IS A HACKTRAIN INITIATIVE TO INNOVATE THE TRANSPORT INDUSTRY.</h2>
@@ -56,15 +57,21 @@
 				<h2>THIS MARCH, WE HAVE BEEN COMMISSIONED BY THE DEPARTMENT OF TRANSPORT TO RUN DFTHACKS!!
 				</h2>
 				<p> Pictures speak louder than words. Check out the aftermovie from our hackathons now!!
-				</p>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/f8AxokvfcX0?rel=0" frameborder="2px" allowfullscreen></iframe>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/sUlb5f8bQsg?rel=0" frameborder="2px" allowfullscreen></iframe>
+				</p><br>
+		</div>
+		<div class="wrapper2">
+				<div id="video-1">
+					<iframe width="475" height="267" src="https://www.youtube.com/embed/f8AxokvfcX0?rel=0" frameborder="2px" allowfullscreen></iframe>
+				</div>
+				<div id="video-2">
+					<iframe width="475" height="267" src="https://www.youtube.com/embed/sUlb5f8bQsg?rel=0" frameborder="2px" allowfullscreen></iframe>
+				</div>
 		</div>
 	</div>
 	
 	<!-- Apply 
    ================================================== -->	
-	<div id="Apply">
+	<div id="apply">
 		<div class="wrapper">
 			<img class="polygon" src="../img-sarah/polygon-apply.png">
 				<h2>APPLY NOW TO JOIN US FOR DFTHACKS!</h2>
@@ -84,43 +91,47 @@
 				<div id="invite">
 				<a href="#"><img src="../img-sarah/invite-illustration.png"></a>
 				</div>
-				<h2>WE LOOK FORWARD TO HEARING FROM YOU SOON!</h2>
 		</div>
+				<h2 style="text-align: center; font-size:18px;">WE LOOK FORWARD TO HEARING FROM YOU SOON!</h2>
 	</div>
 	
 	<!-- FAQ
    ================================================== -->	
-	<div id="FAQ">
+	<div id="faq">
 		<div class="wrapper">
 			<img class="polygon" src="../img-sarah/polygon-faq.png">
-			<ul>
-				<li class="faq-1">
-					<h3>What is a hackathon?</h3>
-					<h4>Hackathons are endurance events which challenge small teams to intensively build products in an extrememly short space of time.</h4>
-				</li>
-				<li class="faq-2">
-					<h3>Can I apply?</h3>
-					<h4>We welcome alßl programmers, designers and entrepreneurs! But if you're really interested in innovating the transport industry then we would love for you to apply too!</h4>
-				</li>
-				<li class="faq-3">
-					<h3>What would I have to bring for the DfTHacks weekdn?</h3>
-					<h4>Nothing but a laptop, clothes and toiletries for the weekend! And yourself!</h4>
-				</li>
-				<li class="faq-4">
-					<h3>Are there any travel reimbursements provided?</h3>
-					<h4>Yes there is! For applicants traveling from inside or outside the UK, we provide up to £25/£50 for travel reimbursement respectively. Reimbursements are limited and are given on a first come first serve basis to applicants, so apply early!</h4>
-				</li>
-				<li class="faq-5">
-					<h3>What will I eat?</h3>
-					<h4>We will provide you food from Friday's lunch to Sunday's lunch. If you have dietary restrictions, we'll try out best to accommodate them! Don't forget the abundance of snacks we'll be providing throughout the hackathon weekend!</h4>
-				</li>
-				<li class="faq-6">
-					<h3>Where will I sleep?</h3>
-					<h4>On Friday night, you would be provided with hotel accommodation, but on the second night there will be none as the idea of a hackathon is to hack overnight for 48 hours! However, you can still rest when you need to!!
-					</h4>
-				</li>
+			<table>
+				<tr>
+					<td class="faq-1">
+						<h2>What is a hackathon?</h2>
+						<p>Hackathons are endurance events which challenge small teams to intensively build products in an extrememly short space of time.</p>
+					</td>
+					<td class="faq-2">
+						<h2>Can I apply?</h2>
+						<p>We welcome all programmers, designers and entrepreneurs! But if you're really interested in innovating the transport industry then we would love for you to apply too!</p>
+					</td>
+					<td class="faq-3">
+						<h2>What would I have to bring for the DfTHacks weekend?</h2>
+						<p>Nothing but a laptop, clothes and toiletries for the weekend! And yourself!</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="faq-4">
+						<h2>Are there any travel reimbursements provided?</h2>
+						<p>Yes there is! For applicants traveling from inside or outside the UK, we provide up to £25/£50 for travel reimbursement respectively. Reimbursements are limited and are given on a first come first serve basis to applicants, so apply early!</p>
+					</td>
+					<td class="faq-5">
+						<h2>What will I eat?</h2>
+						<p>We will provide you food from Friday's lunch to Sunday's lunch. If you have dietary restrictions, we'll try out best to accommodate them! Don't forget the abundance of snacks we'll be providing throughout the hackathon weekend!<p>
+					</td>
+					<td class="faq-6">
+						<h2>Where will I sleep?</h2>
+						<p>On Friday night, you would be provided with hotel accommodation, but on the second night there will be none as the idea of a hackathon is to hack overnight for 48 hours! However, you can still rest when you need to!!
+						</p>
+					</td>
+				</tr>
 				<div class="clear"></div>
-			</ul>
+			</table>
 		</div>
 	</div>
 	
@@ -152,16 +163,25 @@
 
 	<!-- Press 
    ================================================== -->	
-	<div id="Press">
+	<div id="press">
 		<div class="wrapper">
 			<img class="polygon" src="../img-sarah/polygon-press.png">
-			<article></article>
-			<article></article>
-			<article></article>
-			<article></article>
-			<article></article>
-			<article></article>
-			<article></article>
+			<ul>
+				<li class="feature-2">
+					<h3>"Flexible Booking Engine Wins HackTrain 3.0"</h3>
+					<h4>FlexRail, the winning idea for HackTrain 3.0 was featured in this piece with a quote from HackTrain’s co-founder, River Tamoor Baig: ‘...by using data and new technology we can finally work towards solving some of the challenges that have been plaguing passengers and the rail industry for decades. This is our chance for a RailTech revolution.’</h4>
+				</li>
+				<li class="feature-1">
+					<h3>
+								  "All about The HackTrain"</h3>
+					<h4>Just a week after the HackTrain 3.0, we were featured on Forbes with an amazing write up by the Forbes team. The article outlines the successes of HackTrain 3.0 from November and also The HackTrain Accelerator from March!</h4>
+				</li>
+				<li class="feature-3">
+					<h3>"HackTrain 3.0 - Hacking the Rail Industry Once Again!"</h3>
+					<h4>Our third feature on Smartrail World News - ‘HackTrain 3.0 - Hacking the Rail Industry Once Again!’. The article features the launch of HackTrain 3.0 at St. Pancras Renaissance Hotel in London with over 15 speakers representing different stakeholders in the rail industry.</h4>
+				</li>
+				<div class="clear"></div>
+			</ul>
 		</div>
 	</div>
 
@@ -169,14 +189,30 @@
    ================================================== -->	
 	<footer>
 		<div class="wrapper">
-			<div id="footer-socialmedia">
-				<ul></ul>
-				<ul></ul>
-				<ul></ul>
+			<img class="polygon" src="../img-sarah/polygon-contact.png">
+			<div id="footer-contact">
+				<p style="text-align:center;">HAVE ANY QUESTIONS?</p>
+				<h1 style="text-align:center;">Feel free to drop us an email or contact us through our social media!</h1>
+				<a href="#" class="button-2"><img src="../img-sarah/contactus-button.png">
+			</div></a>
 			</div>
-			<div id="footer-contact"></div>
+			<div id="footer-socialmedia">
+				<ul>
+					<li><a href="https://www.facebook.com/thehacktrain/"><img style="width:50px;" src="../img-sarah/fb-logo.png"></a></li>
+					<li><a href="https://twitter.com/TheHackTrain/"><img style="width:50px;" src="../img-sarah/twitter-logo.png"></a></li>
+					<li><a href="https://www.linkedin.com/company-beta/10041577//"><img style="width:50px;" src="../img-sarah/linkedin-logo.png"></a></li>
+					<li><a href="https://www.instagram.com/thehacktrain/"><img style="width:50px;" src="../img-sarah/insta-logo.png"></a></li>
+					<li><a href="https://www.youtube.com/channel/UCMK0sHikZdBEXB_-bCJa_Sg/"><img style="width:50px;" src="../img-sarah/youtube-logo.png"></a></li>
+				</ul>
+			</div>
+			<div id="footer-line">
+				<img src="../img-sarah/footer-line.png">
+			</div>
+			<br><p style="text-align:center; line-height:20px;"> Copyright © 2016 Hack Partners Limited. All rights reserved. HackTrain is a registered trademark of Hack Partners Limited. </p><br>
+			<div class="clear"></div>
 		</div>
 	</footer>
+
 
 </body>
 </html>
