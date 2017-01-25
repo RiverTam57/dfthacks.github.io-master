@@ -1,26 +1,26 @@
 @font-face {
-	font-family: GothamLight;
-	src: url('fonts/dfthacks/Gotham-Light.otf');
+	font-family: "GothamLight";
+	src: url('../fonts/dfthacks/Gotham-Light.otf');
 }
 
 @font-face {
-	font-family: GothamNarrowLight;
-	src: url('fonts/dfthacks/Gotham-Narrow-Light.otf');
+	font-family: "GothamNarrowLight";
+	src: url('../fonts/dfthacks/Gotham-Narrow-Light.otf');
 }
 
 @font-face {
-	font-family: GothamThin;
-	src: url('fonts/dfthacks/Gotham-Thin.otf');
+	font-family: "GothamThin";
+	src: url('../fonts/dfthacks/Gotham-Thin.otf');
 }
 
 @font-face {
-	font-family: GothamLightRegular;
-	src: url('fonts/dfthacks/GothamLight-Regular.otf');
+	font-family: "GothamLightRegular";
+	src: url('../fonts/dfthacks/GothamLight-Regular.otf');
 }
 
 @font-face {
-	font-family: GothamBold;
-	src: url('fonts/dfthacks/Gotham-Black.otf');
+	font-family: "GothamBold";
+	src: url('../fonts/dfthacks/Gotham-Black.otf');
 }
 
 body { 
@@ -28,6 +28,10 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size:cover;
+}
+
+#object{
+	visibility:hidden;
 }
 
 .wrapper {
@@ -46,6 +50,14 @@ body {
 	clear:both;
 }
 
+li a{
+	font-family: "GothamThin";
+	color: #FFFFFF;
+	text-decoration: none;
+	text-align:left;
+	text-shadow: -1px 0px 10px rgba(255, 255, 255, 0.76);
+}
+
 a {
 	text-decoration: none;
 	color: #ffffff;
@@ -61,18 +73,19 @@ ul {
 
 li {
 	display:inline;
-	font-family: GothamLight;
+	font-family: "GothamLight";
 	font-size: 25px;
 	margin-top:15px;
+
 }
 
-li a{
+header li a{
 	color: #FFFFFF;
 	text-decoration: none;
 	text-align:center;
 }
 
-li a:hover {
+header li a:hover {
   	background: -webkit-linear-gradient(#00c0ff, #0be1a2);
   	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -94,10 +107,10 @@ li a:hover {
 }
 
 h1{
-	font-family:GothamLight;
+	font-family:"GothamLight";
 	font-size:25px;
 	color: #FFFFFF;
-	text-shadow: 5px 5px 5px #000000;
+	text-shadow: 2px 2px 10px #000000;
 	margin:auto;
 	padding: auto;
 	line-height:50px;
@@ -105,28 +118,28 @@ h1{
 }
 
 h2{
-	font-family:GothamLight;
+	font-family:"GothamLight";
 	font-size:25px;
 	color: #0BE1A2;
-	text-shadow: 5px 5px 5px #000000;
+	text-shadow: 3px 3px 10px #000000;
 	margin:auto;
 	padding: auto;
 	line-height:50px;
-	margin-bottom: 5px;
+	margin-bottom: 0px;
 }
 
 p{
-	font-family:GothamLight;
-	font-size:17px;
-	color: #ffffff;
-	text-shadow: 5px 5px 5px #000000;
-	line-height: 35px;
+	font-family:"GothamLight";
+	font-size:18px;
+	color: #6c7d8e;
+	text-shadow: 4px 4px 10px #000000;
+	line-height: 40px;
 	margin-bottom: 15px;
 }
 
 
 li h3{
-	font-family:Gothamlight;
+	font-family:"Gothamlight";
 	font-size:16px;
 	color:#0be1a2;
 	text-shadow: 5px 5px 5px #000000;
@@ -134,9 +147,9 @@ li h3{
 }
 
 li h4{
-	font-family:GothamLight;
-	font-size:12px;
-	color:#FFFFFF;
+	font-family:"GothamLight";
+	font-size:16px;
+	color:#6c7d8e;
 	text-shadow: 5px 5px 5px #000000;
 	margin-bottom: 20px;
 }
@@ -201,8 +214,7 @@ header h1.color{
 	margin:10px;
 	float:left;
 	overflow: hidden;
-	border: 6px solid transparent;
-	-webkit-border-radius:10px;
+	border: 3px solid transparent;
   -moz-border-image: -moz-linear-gradient(left, #0be1a2 0%, #00c0ff 100%);
   -webkit-border-image: -webkit-linear-gradient(left, #0be1a2 0%, #00c0ff 100%);
   border-image: linear-gradient(to right, #0be1a2 0%, #00c0ff 100%);
@@ -214,10 +226,8 @@ header h1.color{
 	text-align:center;
 	margin:10px;
 	float:right;
-	border-radius: 20px;
 	overflow: hidden;
-	border: 6px solid transparent;
-	-webkit-border-radius:10px;
+	border: 3px solid transparent;
 	-moz-border-image: -moz-linear-gradient(left, #00c0ff 0%, #0be1a2 100%);
   -webkit-border-image: -webkit-linear-gradient(left, #00c0ff 0%, #0be1a2 100%);
   border-image: linear-gradient(to right, #00c0ff 0%, #0be1a2 100%);
@@ -226,10 +236,10 @@ header h1.color{
 
 #apply{
 	padding: 60px 0;
-	text-align: center;
+	text-align: left;
 }
 
-table {
+/*table {
 	padding:2px;
 }
 
@@ -251,38 +261,40 @@ table tr td {
 	padding-top:10px;
 	line-height: 28px;
 	text-shadow: 5px 5px 5px #000000;
-}
+}*/
 
 #press ul {
-	margin: 80px 0;
+	margin: 40px 0;
 	margin-top:120px;
-	margin-bottom:10px;
-	text-shadow: 5px 5px 5px #000000;
+	margin-bottom:0px;
+	text-shadow: 3px 3px 5px #000000;
 }
 
 #press ul li {
-	width: 300px;
+	width: 320px;
 	padding-top: 140px;
 	float: left;
 	margin-right: 10px;
+	margin-left:10px;
 	text-align: center;
-	text-shadow: 5px 5px 5px #000000;
+	text-shadow: 3px 3px 5px #000000;
 }
 
 #press h3{
-	font-family:GothamLight;
+	font-family:"GothamLight";
 	font-size: 22px;
 	font:#ffffff;
 	padding-top:15px;
-	text-shadow: 5px 5px 5px #000000;
+	text-shadow: 3px 3px 5px #000000;
+	text-align: center;
 }
 
 #press h4{
-	font-family:GothamLight;
-	font-size:13px;
-	padding:10px;
-	line-height: 22px;
-	text-shadow: 5px 5px 5px #000000;
+	font-family:"GothamLight";
+	font-size:18px;
+	padding:2px;
+	line-height: 24px;
+	text-shadow: 3px 3px 5px #000000;
 }
 
 #press ul li.feature-1 {
@@ -297,6 +309,20 @@ table tr td {
 	background: url('../img-sarah/smartrail-logo.png') no-repeat top center;
 }
 
+#press ul li.feature-4 {
+	background: url('../img-sarah/irj-logo.png') no-repeat top center;
+}
+
+#press ul li.feature-5 {
+	background: url('../img-sarah/railway-news-logo.png') no-repeat top center;
+}
+
+.cd-faq li a:hover {
+  	background: -webkit-linear-gradient(#00c0ff, #0be1a2);
+  	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .button-2 {
 	display: block;
 	margin: 30px;
@@ -309,13 +335,13 @@ table tr td {
 }
 
 #footer-contact p {
-	font-size:25px;
+	font-size:16px;
 	text-shadow: 5px 5px 5px #000000;
 	font:#0be1a2;
 }
 
 #footer-contact h1 {
-	font-size:16px;
+	font-size:25px;
 	display: block;
 	margin: 0 auto 20px auto;
 	width: 400px;
@@ -330,13 +356,15 @@ footer ul li{
 }
 
 #footer-socialmedia{
-	margin-bottom: 100px;
+	margin-bottom: 70px;
+	margin-top:50px;
 }
 
 #footer-line{
 	display:block;
 	text-align:center;
 	margin: 0 auto;
-	width:10%;
-	margin-left:50px;
+	width: 1000px;
+	margin-left:-30px;
 }
+
