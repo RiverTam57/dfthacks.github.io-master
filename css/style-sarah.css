@@ -368,3 +368,32 @@ footer ul li{
 	margin-left:-30px;
 }
 
+#back-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 9999;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 30px;
+    background: -webkit-linear-gradient(#00c0ff, #0be1a2);
+    color: #444;
+    cursor: pointer;
+    border: 0;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+}
+#back-to-top:hover {
+    background: #e9ebec;
+}
+#back-to-top.show {
+    opacity: 1;
+}
+#content {
+    height: 2000px;
+}
+
+
